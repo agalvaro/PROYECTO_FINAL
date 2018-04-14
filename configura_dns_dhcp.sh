@@ -21,12 +21,12 @@ chmod 640 /etc/bind/ddns.key
 chmod 640 /etc/dhcp/ddns.key
 
 rm /etc/bind/named.conf.local
-cp -r /archivos_dns/named.conf.local /etc/bind/named.conf.local
-cp -r /archivos_dns/db.directa /etc/bind/db.directa
-cp -r /archivos_dns/db.inversa /etc/bind/db.inversa
+cp archivos_dns/named.conf.local /etc/bind/named.conf.local
+cp archivos_dns/db.directa /etc/bind/db.directa
+cp archivos_dns/db.inversa /etc/bind/db.inversa
 
 ln -s /etc/bind/db.directa /var/cache/bind/
-ln -s /etc/bind/db.inversa /vr/cache/bind/
+ln -s /etc/bind/db.inversa /var/cache/bind/
 
 rm /etc/dhcp/dhcp.conf
 cp -r /archivos_dhcp/dhcp.conf /etc/dhcp/dhcp.conf
