@@ -32,7 +32,7 @@ rm /etc/dhcp/dhcp.conf
 cp /archivos_dhcp/dhcp.conf /etc/dhcp/dhcp.conf
 
 echo " " >> /etc/resolv.conf
-echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+echo "nameserver 192.168.1.19" >> /etc/resolv.conf
 
 /etc/init.d/isc-dhcp-server restart
 /etc/init.d/bind9 restart
