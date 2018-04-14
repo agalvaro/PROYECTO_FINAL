@@ -28,8 +28,8 @@ cp archivos_dns/db.inversa /etc/bind/db.inversa
 ln -s /etc/bind/db.directa /var/cache/bind/
 ln -s /etc/bind/db.inversa /var/cache/bind/
 
-rm /etc/dhcp/dhcp.conf
-cp -r /archivos_dhcp/dhcp.conf /etc/dhcp/dhcp.conf
+rm etc/dhcp/dhcp.conf
+cp archivos_dhcp/dhcp.conf /etc/dhcp/dhcp.conf
 
 echo " " >> /etc/resolv.conf
 echo "nameserver 192.168.1.19" >> /etc/resolv.conf
