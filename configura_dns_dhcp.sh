@@ -28,7 +28,7 @@ cp archivos_dns/db.inversa /etc/bind/db.inversa
 ln -s /etc/bind/db.directa /var/cache/bind/
 ln -s /etc/bind/db.inversa /var/cache/bind/
 
-rm etc/dhcp/dhcpd.conf
+rm /etc/dhcp/dhcpd.conf
 cp archivos_dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf
 
 echo " " >> /etc/resolv.conf
