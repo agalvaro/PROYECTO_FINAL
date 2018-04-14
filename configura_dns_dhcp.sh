@@ -3,7 +3,7 @@
 apt-get -y install bind9
 apt-get -y install isc-dhcp-server
 
-dnsec-keygen -a HMAC-MD5 -b 128 -r /dev/urandom -n USER DDNS_UPDATE
+dnssec-keygen -a HMAC-MD5 -b 128 -r /dev/urandom -n USER DDNS_UPDATE
 
 echo "key DDNS_UPDATE {" > ddns.key
 echo "algorithm HMAC-MD5.SIG-ALG.REG.INT;" >> ddns.key
