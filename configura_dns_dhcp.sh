@@ -8,7 +8,7 @@ dnssec-keygen -a HMAC-MD5 -b 128 -r /dev/urandom -n USER DDNS_UPDATE
 echo "key DDNS_UPDATE {" > ddns.key
 echo "algorithm HMAC-MD5.SIG-ALG.REG.INT;" >> ddns.key
 a='secret "'
-s='cat *.private | grep Key | cut -d " " -f 2t'
+s=$(cat *.private | grep Key | cut -d " " -f 2t')
 l='";'
 d="$a$s$l"
 echo "$d" >> ddns.key
