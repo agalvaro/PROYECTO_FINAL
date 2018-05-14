@@ -33,8 +33,7 @@ ln -s /etc/bind/db.inversa /var/cache/bind/
 rm /etc/dhcp/dhcpd.conf
 cp archivos_dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf
 
-echo " " >> /etc/resolv.conf
-echo "nameserver 192.168.1.19" >> /etc/resolv.conf
+echo "nameserver 192.168.1.19">/etc/resolv.conf
 
 /etc/init.d/isc-dhcp-server restart
 /etc/init.d/bind9 restart
