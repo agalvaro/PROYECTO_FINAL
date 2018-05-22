@@ -23,15 +23,15 @@ chmod 640 /etc/bind/ddns.key
 chmod 640 /etc/dhcp/ddns.key
 
 rm /etc/bind/named.conf.local
-cp archivos_dns/named.conf.local /etc/bind/named.conf.local
-cp archivos_dns/db.directa /etc/bind/db.directa
-cp archivos_dns/db.inversa /etc/bind/db.inversa
+cp PROYECTO_FINAL/archivos_dns/named.conf.local /etc/bind/named.conf.local
+cp PROYECTO_FINAL/archivos_dns/db.directa /etc/bind/db.directa
+cp PROYECTO_FINAL/archivos_dns/db.inversa /etc/bind/db.inversa
 
 ln -s /etc/bind/db.directa /var/cache/bind/
 ln -s /etc/bind/db.inversa /var/cache/bind/
 
 rm /etc/dhcp/dhcpd.conf
-cp archivos_dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf
+cp PROYECTO_FINAL/archivos_dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf
 
 echo "nameserver 192.168.1.19">/etc/resolv.conf
 
