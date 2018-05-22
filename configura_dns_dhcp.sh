@@ -23,7 +23,9 @@ chmod 640 /etc/bind/ddns.key
 chmod 640 /etc/dhcp/ddns.key
 
 rm /etc/bind/named.conf.local
+rm /etc/bind/named.conf.options
 cp /home/usuario/PROYECTO_FINAL/archivos_dns/named.conf.local /etc/bind/named.conf.local
+cp /home/usuario/PROYECTO_FINAL/archivos_dns/named.conf.options /etc/bind/named.conf.options
 cp /home/usuario/PROYECTO_FINAL/archivos_dns/db.directa /etc/bind/db.directa
 cp /home/usuario/PROYECTO_FINAL/archivos_dns/db.inversa /etc/bind/db.inversa
 
