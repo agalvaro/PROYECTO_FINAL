@@ -1,0 +1,22 @@
+#
+# jessie-oficiales
+deb http://mirrors.kernel.org/debian/ jessie main contrib non-free
+deb-src http://mirrors.kernel.org/debian/ jessie main contrib non-free
+
+# jessie-actualizaciones-seguridad
+deb http://security.debian.org/ jessie/updates main contrib non-free
+deb-src http://security.debian.org/ jessie/updates main contrib non-free
+
+# jessie-actualizaciones-sistema
+deb http://mirrors.kernel.org/debian/ jessie-updates main contrib non-free
+deb-src http://mirrors.kernel.org/debian/ jessie-updates main contrib non-free
+deb http://mirrors.kernel.org/debian jessie-proposed-updates main contrib non-free
+deb-src http://mirrors.kernel.org/debian jessie-proposed-updates main contrib non-free
+
+# jessie-backports
+deb http://mirrors.kernel.org/debian/ jessie-backports main contrib non-free
+deb-src http://mirrors.kernel.org/debian/ jessie-backports main contrib non-free
+
+# deb-multimedia
+# apt-get install deb-multimedia-keyring
+deb http://www.deb-multimedia.org jessie main non-free
